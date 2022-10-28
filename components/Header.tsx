@@ -8,7 +8,7 @@ export default function Header() {
     <header>
       <div className={styles.header_div_wrap}>
         <div className={styles.header_div_wrap_right}>
-          <h1 className={styles.header_h1_title}>RAIKA{"'"}S PORTFOLIO</h1>
+          <h1 className={styles.header_h1_title}>{"RAIKA'S PORTFOLIO"}</h1>
         </div>
         <div className={styles.header_div_wrap_left}>
           <Link href="/">
@@ -33,7 +33,9 @@ export default function Header() {
           </Link>
           <Link href="/works">
             <div className={styles.header_div_textwrap}>
-              <h2 className={`${styles.header_h2_subtitle} ${styles.works}`}>WORKS</h2>
+              <h2 className={`${styles.header_h2_subtitle} ${styles.works}`}>
+                WORKS
+              </h2>
               {router.pathname == "/works" && (
                 <div
                   className={`${styles.header_div_top_line} ${styles.works}`}
