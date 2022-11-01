@@ -1,5 +1,5 @@
-$media-phone:850px;
-$media-pc:851px;
+$media-phone:1079px;
+$media-pc:1080px;
 
 @mixin phone {
   @media screen and (max-width: ($media-phone) ) {
