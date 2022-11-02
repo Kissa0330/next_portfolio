@@ -10,23 +10,40 @@
     height: 59px;
     margin: 30px 0 0 53px;
     .about_h1_title {
-      margin: 2px 0 0 0;
+      margin: 5px 0 0 0;
+      font-size: 28px;
+    }
+  }
+  @include phone {
+    width: 181px;
+    height: 37px;
+    margin: 0 0 0 20px;
+    .about_h1_title {
+      margin: 3px 0 0 0;
+      font-size: 16px;
     }
   }
 }
 .about_p_text {
   @include pc {
-    margin: 30px 0 0 59px;
+    margin: 30px 0 0 53px;
     font-size: 20px;
     line-height: 40px;
+  }
+  @include phone {
+    margin: 20px 0 0 20px;
+    font-size: 15px;
+    line-height: 30px;
   }
 }
 .about_div_links {
   display: flex;
   .about_div_twitter_line {
+    background-color: #b71616;
     height: 2px;
   }
   .about_div_github_line {
+    background-color: #b71616;
     height: 2px;
   }
   @include pc {
@@ -37,23 +54,46 @@
         font-size: 25px;
       }
       .about_div_twitter_line {
-        background-color: #b71616;
         width: 90px;
-        margin-left: -3px;
+        margin: 0 0 0 -3px;
       }
       .about_div_github_line {
-        background-color: #b71616;
         width: 88px;
-        margin-left: -4px;
+        margin: 0 0 0 -4px;
+      }
+    }
+  }
+  @include phone {
+    margin: 25px 0 40px 0px;
+    .about_div_link_wrap {
+      margin: 0 0 0 20px;
+      .about_a_link {
+        font-size: 15px;
+      }
+      .about_div_twitter_line {
+        width: 62px;
+        margin: 0 0 0 -6px;
+      }
+      .about_div_github_line {
+        width: 62px;
+        margin: 0 0 0 -6px;
       }
     }
   }
 }
 .about_ul_lists {
   font-weight: bold;
+  padding: 0;
   @include pc {
-	margin: 30px 0 0 53px;
+    margin: 30px 0 0 73px;
     font-size: 20px;
+    .about_li_list {
+      margin: 0 0 10px 0;
+    }
+  }
+  @include phone {
+    margin: 20px 0 0 40px;
+    font-size: 15px;
     .about_li_list {
       margin: 0 0 10px 0;
     }
