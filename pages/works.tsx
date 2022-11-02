@@ -1,6 +1,6 @@
 import Image from "next/image";
 import styles from "../styles/works.module.scss";
-import works from "../static/works.json";
+import works from "../public/works.json";
 import Link, { LinkProps } from "next/link";
 import { useState } from "react";
 

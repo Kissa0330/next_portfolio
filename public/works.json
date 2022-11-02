@@ -1,0 +1,12 @@
+[
+	{
+	  "id": "1",
+	  "title": "DisPlay",
+	  "image": "/DisPlay.png",
+	  "time": "2021 2",
+	  "content": "2人のチーム開発で半年で開発しました。習慣に重点をおいたTodo管理アプリです。決まった習慣を設定することで、暇な時間を明確にし、その時間にTodoを設定することが出来ます。",
+	  "category": "Web",
+	  "github_url": "https://github.com/Kissa0330/DisPlay-client",
+	  "url": "https://display-client.herokuapp.com"
+	}
+  ]

@@ -18,16 +18,16 @@
       .works_div_category_text {
         font-weight: bold;
       }
-      &.isSelected{
+      &.isSelected {
         background-color: #b71616;
-        .works_div_category_text{
+        .works_div_category_text {
           color: white;
         }
       }
     }
   }
   @include pc {
-    margin: 30px 0 0 0;
+    margin: 50px 0 0 0;
     align-items: flex-end;
     .works_div_title_box {
       width: 417px;
@@ -83,9 +83,12 @@
   flex-wrap: wrap;
   .works_div_work_wrap {
     .works_div_text_wrap {
+      .works_p_time {
+        font-weight: normal;
+      }
       .works_p_category {
         font-weight: bold;
-		opacity: 0.8;
+        opacity: 0.8;
       }
     }
   }

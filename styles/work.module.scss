@@ -1,0 +1,127 @@
+@import "base";
+
+.work_div_title_box {
+  border: 3px solid #b71616;
+  text-align: center;
+  margin: 0 auto 0 auto;
+  @include pc {
+    width: 351px;
+    height: 69px;
+    margin-top: 50px;
+    .work_h1_title_text {
+      margin: 5px 0 0 0;
+      font-size: 35px;
+    }
+  }
+  @include phone {
+    width: 241px;
+    height: 47px;
+    .work_h1_title_text {
+      margin: 3px 0 0 0;
+      font-size: 23px;
+    }
+  }
+}
+.work_div_info_wrap {
+  display: flex;
+  justify-content: space-between;
+  .work_div_info_right {
+    display: flex;
+    font-weight: bold;
+    text-align: center;
+    .work_div_info_github {
+      .work_a_info_github_content {
+        text-decoration: underline;
+      }
+    }
+  }
+  .work_a_visit_text {
+    .work_div_visit_box {
+      border: 3px solid #b71616;
+      text-align: center;
+      border-radius: 23px;
+    }
+  }
+  @include pc {
+    margin: 54px 213px 0 213px;
+    .work_div_info_right {
+      .work_div_info_time {
+        .work_div_info_time_title {
+          font-size: 20px;
+        }
+        .work_div_info_time_content {
+          font-size: 15px;
+        }
+      }
+      .work_div_info_github {
+        margin: 0 0 0 35px;
+        .work_div_info_github_title {
+          font-size: 20px;
+        }
+        .work_a_info_github_content {
+          font-size: 15px;
+        }
+      }
+    }
+    .work_a_visit_text {
+      .work_div_visit_box {
+        padding: 3px 0 0 0;
+        font-size: 22px;
+        width: 193px;
+        height: 47px;
+      }
+    }
+  }
+  @include phone {
+    margin: 40px 20px 0 20px;
+    .work_div_info_right {
+      .work_div_info_time {
+        .work_div_info_time_title {
+          font-size: 14px;
+        }
+        .work_div_info_time_content {
+          font-size: 12px;
+        }
+      }
+      .work_div_info_github {
+        margin: 0 0 0 35px;
+        .work_div_info_github_title {
+          font-size: 14px;
+        }
+        .work_a_info_github_content {
+          font-size: 12px;
+        }
+      }
+    }
+    .work_a_visit_text {
+      .work_div_visit_box {
+        padding: 3px 0 0 0;
+        font-size: 17px;
+        width: 163px;
+        height: 39px;
+      }
+    }
+  }
+}
+.work_p_content {
+  @include pc {
+    margin: 30px 213px 0 213px;
+    font-size: 18.5px;
+    line-height: 40px;
+  }
+  @include phone {
+    margin: 35px 20px 0px 20px;
+    font-size: 12px;
+    line-height: 20px;
+  }
+}
+.work_div_imgwrap{
+	@include pc {
+		margin: 60px 213px 0 213px;
+		padding-bottom: 100px;
+	  }
+	  @include phone {
+		margin: 40px 30px 0 30px;
+		padding-bottom: 50px;
+	  }
+}
