@@ -10,12 +10,19 @@
     }
   }
   .works_div_category_wrap {
+    cursor: pointer;
     display: flex;
     .works_div_category_box {
       text-align: center;
       border: 3px solid #b71616;
       .works_div_category_text {
         font-weight: bold;
+      }
+      &.isSelected{
+        background-color: #b71616;
+        .works_div_category_text{
+          color: white;
+        }
       }
     }
   }
