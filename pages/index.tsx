@@ -11,14 +11,21 @@ export default function Home() {
           </div>
         </div>
         <div className={styles.top_div_imgwrap}>
-          <Image style={{height: "auto", maxWidth:"100%"}} src="/takanoraika.png" alt="my photo" width={533} height={315} priority/>
+          <Image
+            style={{ height: "auto", maxWidth: "100%" }}
+            src="/takanoraika.png"
+            alt="my photo"
+            width={533}
+            height={315}
+            priority
+          />
         </div>
       </div>
       <div className={styles.top_div_introduction}>
-            <h3 className={styles.top_h3_introduction}>
-              {"I'm frontend engineer and designer"}
-            </h3>
-          </div>
+        <h3 className={styles.top_h3_introduction}>
+          {"I'm frontend engineer and designer"}
+        </h3>
+      </div>
     </div>
   );
 }

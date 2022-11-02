@@ -1,0 +1,123 @@
+@import "base";
+
+.works_div_head_wrap {
+  display: flex;
+  .works_div_title_box {
+    text-align: center;
+    background-color: #b71616;
+    .works_h1_title_text {
+      color: white;
+    }
+  }
+  .works_div_category_wrap {
+    display: flex;
+    .works_div_category_box {
+      text-align: center;
+      border: 3px solid #b71616;
+      .works_div_category_text {
+        font-weight: bold;
+      }
+    }
+  }
+  @include pc {
+    margin: 30px 0 0 0;
+    align-items: flex-end;
+    .works_div_title_box {
+      width: 417px;
+      height: 87px;
+      margin: 0 0 0 53px;
+      .works_h1_title_text {
+        margin: 12px 0 0 0;
+        font-size: 40px;
+      }
+    }
+    .works_div_category_wrap {
+      margin: 0 0 0 30px;
+      .works_div_category_box {
+        width: 175px;
+        height: 49px;
+        margin: 0 25px 0 0;
+        .works_div_category_text {
+          margin: 5px 0 0 0;
+          font-size: 20px;
+        }
+      }
+    }
+  }
+  @include phone {
+    margin: 0 0 0 0;
+    flex-direction: column;
+    .works_div_title_box {
+      width: 173px;
+      height: 33px;
+      margin: 0 0 0 20px;
+      .works_h1_title_text {
+        margin: 2px 0 0 0;
+        font-size: 20px;
+      }
+    }
+    .works_div_category_wrap {
+      margin: 17px 0 0 20px;
+      .works_div_category_box {
+        width: 97px;
+        height: 31px;
+        margin: 0 20px 0 0;
+        .works_div_category_text {
+          margin: 3px 0 0 0;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
+
+.works_div_works_wrap {
+  display: flex;
+  flex-wrap: wrap;
+  .works_div_work_wrap {
+    .works_div_text_wrap {
+      .works_p_category {
+        font-weight: bold;
+		opacity: 0.8;
+      }
+    }
+  }
+  @include pc {
+    margin: 45px 0 0 0px;
+    .works_div_work_wrap {
+      margin: 0 77px 35px 53px;
+      .works_div_text_wrap {
+        margin: 15px 0 0 0;
+        .works_p_time {
+          font-size: 20px;
+        }
+        .works_h2_title {
+          font-size: 25px;
+        }
+        .works_p_category {
+          font-size: 20px;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+  @include phone {
+    margin: 30px 23px 0 23px;
+    .works_div_work_wrap {
+      margin: 0 0 25px 0;
+      .works_div_text_wrap {
+        margin: 15px 0 0 0;
+        .works_p_time {
+          font-size: 12px;
+        }
+        .works_h2_title {
+          font-size: 15px;
+        }
+        .works_p_category {
+          font-size: 12px;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}

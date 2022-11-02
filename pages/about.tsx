@@ -1,6 +1,6 @@
 import styles from "../styles/about.module.scss";
 
-export default function Home() {
+export default function About() {
   return (
     <div>
       <div className={styles.about_div_box}>
@@ -28,7 +28,7 @@ export default function Home() {
             target="blank"
             className={styles.about_a_link}
           >
-            github
+            Github
           </a>
           <div className={styles.about_div_github_line}></div>
         </div>
