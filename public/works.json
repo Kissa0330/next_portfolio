@@ -8,5 +8,25 @@
 	  "category": "Web",
 	  "github_url": "https://github.com/Kissa0330/DisPlay-client",
 	  "url": "https://display-client.herokuapp.com"
-	}
+	},
+	{
+		"id": "2",
+		"title": "minishell",
+		"image": "/minishell.png",
+		"time": "2021 10",
+		"content": "2人のチーム開発で1ヶ月で開発しました。shellの一種であるbashを再開発する課題です。Githubのリンクからダウンロードすることが出来ます。",
+		"category": "42 subject",
+		"github_url": "https://github.com/shima8823/minishell",
+		"url": "none"
+	  },
+	  {
+		"id": "3",
+		"title": "Noerr",
+		"image": "/Noerr.png",
+		"time": "2021 2",
+		"content": "4人のチームで1ヶ月で考案しました。次世代の就職に役に立つアプリを考案するコンテストです。企業賞を受賞しました",
+		"category": "Design",
+		"github_url": "none",
+		"url": "https://student.redesigner.jp/portfolios/PF86b920dbb40403511982679962731261"
+	  }
   ]

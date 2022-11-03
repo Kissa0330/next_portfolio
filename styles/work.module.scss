@@ -115,13 +115,14 @@
     line-height: 20px;
   }
 }
-.work_div_imgwrap{
-	@include pc {
-		margin: 60px 213px 0 213px;
-		padding-bottom: 100px;
-	  }
-	  @include phone {
-		margin: 40px 30px 0 30px;
-		padding-bottom: 50px;
-	  }
+.work_img {
+  text-align: center;
+  @include pc {
+    margin: 60px auto 0 auto;
+    padding-bottom: 100px;
+  }
+  @include phone {
+    margin: 40px auto 0 auto;
+    padding-bottom: 50px;
+  }
 }
