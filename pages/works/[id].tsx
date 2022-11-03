@@ -10,22 +10,22 @@ const Work = () => {
   return (
     <div>
       <div className={styles.work_div_title_box}>
-        <h1 className={styles.work_h1_title_text}>{target.title}</h1>
+        <h1 className={styles.work_h1_title_text}>{target?.title}</h1>
       </div>
       <div className={styles.work_div_info_wrap}>
         <div className={styles.work_div_info_right}>
           <div className={styles.work_div_info_time}>
             <div className={styles.work_div_info_time_title}>制作時期</div>
             <div className={styles.work_div_info_time_content}>
-              {target.time}
+              {target?.time}
             </div>
           </div>
-          {target.github_url != "none" && (
+          {target?.github_url != "none" && (
             <div className={styles.work_div_info_github}>
               <div className={styles.work_div_info_github_title}>Github</div>
               <a
                 className={styles.work_a_info_github_content}
-                href={target.github_url}
+                href={target?.github_url}
                 target="blank"
               >
                 URL
@@ -34,10 +34,10 @@ const Work = () => {
           )}
         </div>
         <div className={styles.work_div_info_left}>
-          {target.url != "none" && (
+          {target?.url != "none" && (
             <a
               className={styles.work_a_visit_text}
-              href={target.url}
+              href={target?.url}
               target="blank"
             >
               <div className={styles.work_div_visit_box}>visit site</div>
@@ -45,14 +45,14 @@ const Work = () => {
           )}
         </div>
       </div>
-      <p className={styles.work_p_content}>{target.content}</p>
+      <p className={styles.work_p_content}>{target?.content}</p>
       <Image
       className={styles.work_img}
         style={{
           height: "auto",
           maxWidth: "100%",
         }}
-        src={target.image}
+        src={target?.image}
         alt="works photo"
         width={854}
         height={512}
