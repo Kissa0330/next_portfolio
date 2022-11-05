@@ -21,10 +21,12 @@ export default function Home() {
           />
         </div>
       </div>
-      <div className={styles.top_div_introduction}>
-        <h3 className={styles.top_h3_introduction}>
-          {"I'm frontend engineer and designer"}
-        </h3>
+      <div className={styles.top_div_intro_wrap}>
+        <div className={styles.top_div_introduction}>
+          <h3 className={styles.top_h3_introduction}>
+            {"I'm frontend engineer and designer"}
+          </h3>
+        </div>
       </div>
     </div>
   );

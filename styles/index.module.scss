@@ -30,7 +30,7 @@
   }
   @include phone {
     flex-direction: column-reverse;
-	margin: 0 0 0 20px;
+    margin: 0 0 0 20px;
     .top_div_right_wrap {
       margin: 0 0 0 0;
       .top_div_Hello {
@@ -52,6 +52,9 @@
       margin: 0 20px 0 auto;
     }
   }
+}
+.top_div_intro_wrap{
+  padding-bottom: 80px;
 }
 .top_div_introduction {
   background-color: #b71616;
