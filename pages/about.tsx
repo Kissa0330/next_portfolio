@@ -15,7 +15,8 @@ export default function About() {
         <div className={styles.about_div_link_wrap}>
           <a
             href="https://twitter.com/designer_raika"
-            target="blank"
+            target="_blank"
+            rel="noopener noreferrer" 
             className={styles.about_a_link}
           >
             Twitter
@@ -25,7 +26,8 @@ export default function About() {
         <div className={styles.about_div_link_wrap}>
           <a
             href="https://github.com/Kissa0330"
-            target="blank"
+            target="_blank"
+            rel="noopener noreferrer" 
             className={styles.about_a_link}
           >
             Github

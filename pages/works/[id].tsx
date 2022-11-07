@@ -6,7 +6,7 @@ import Image from "next/image";
 const Work = () => {
   const router = useRouter();
   const { id } = router.query;
-  const target: any = works.find((work) => work.id == id);
+  const target: any = works.find((work) => work.id === id);
   return (
     <div>
       <div className={styles.work_div_title_box}>
@@ -26,7 +26,8 @@ const Work = () => {
               <a
                 className={styles.work_a_info_github_content}
                 href={target?.github_url}
-                target="blank"
+                target="_blank"
+                rel="noopener noreferrer" 
               >
                 URL
               </a>
@@ -38,7 +39,8 @@ const Work = () => {
             <a
               className={styles.work_a_visit_text}
               href={target?.url}
-              target="blank"
+              target="_blank"
+              rel="noopener noreferrer" 
             >
               <div className={styles.work_div_visit_box}>visit site</div>
             </a>
