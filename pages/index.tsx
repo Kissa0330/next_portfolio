@@ -3,7 +3,7 @@ import styles from "../styles/index.module.scss";
 
 export default function Home() {
   return (
-    <div>
+    <div className={styles.top_div_all}>
       <div className={styles.top_div_wrap}>
         <div className={styles.top_div_right_wrap}>
           <div className={styles.top_div_Hello}>

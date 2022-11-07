@@ -1,5 +1,8 @@
 @import "base";
-
+.top_div_all {
+  max-width: 1300px;
+  margin: 0 auto 0 auto;
+}
 .top_div_wrap {
   display: flex;
   justify-content: space-between;
@@ -53,7 +56,7 @@
     }
   }
 }
-.top_div_intro_wrap{
+.top_div_intro_wrap {
   padding-bottom: 80px;
 }
 .top_div_introduction {
