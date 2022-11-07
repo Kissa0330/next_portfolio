@@ -5,7 +5,7 @@ import Link, { LinkProps } from "next/link";
 import { useState } from "react";
 
 export default function Works() {
-  const [category, setCategory] = useState("none");
+  const [category, setCategory] = useState<String | null>(null);
   const ftClassname =
     category == "42 subject"
       ? `${styles["isSelected"]} ${styles.works_div_category_box}`
@@ -26,13 +26,13 @@ export default function Works() {
           <h1 className={styles.works_h1_title_text}>WORKS</h1>
         </div>
         <div className={styles.works_div_category_wrap}>
-          <div className={ftClassname} onClick={() => setCategory(category == "42 subject" ? "none" : "42 subject")}>
+          <div className={ftClassname} onClick={() => setCategory(category == "42 subject" ? null : "42 subject")}>
             <div className={styles.works_div_category_text}>42 subject</div>
           </div>
-          <div className={WebClassname} onClick={() => setCategory(category == "Web" ? "none" : "Web")}>
+          <div className={WebClassname} onClick={() => setCategory(category == "Web" ? null : "Web")}>
             <div className={styles.works_div_category_text}>Web</div>
           </div>
-          <div className={DesignClassname} onClick={() => setCategory(category == "Design" ? "none" : "Design")}>
+          <div className={DesignClassname} onClick={() => setCategory(category == "Design" ? null : "Design")}>
             <div className={styles.works_div_category_text}>Design</div>
           </div>
         </div>
@@ -40,7 +40,7 @@ export default function Works() {
       <div className={styles.works_div_works_wrap}>
         {works.map((item) => {
           return (
-            (category == "none" || category == item.category) && <Link key={item.id} href={`/works/${item.id}`}>
+            (category == null || category == item.category) && <Link key={item.id} href={`/works/${item.id}`}>
               <div className={styles.works_div_work_wrap}>
                 <Image
                   style={{ height: "auto", maxWidth: "100%" }}
